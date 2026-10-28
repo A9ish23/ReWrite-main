@@ -14,10 +14,86 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      notes: {
+        Row: {
+          id: string
+          user_id: string
+          title: string
+          raw_input: string
+          mode: string
+          created_at: string
+          updated_at: string
+          tags: string[]
+        }
+        Insert: {
+          id: string
+          user_id?: string
+          title: string
+          raw_input?: string
+          mode: string
+          created_at: string
+          updated_at: string
+          tags?: string[]
+        }
+        Update: {
+          id?: string
+          user_id?: string
+          title?: string
+          raw_input?: string
+          mode?: string
+          created_at?: string
+          updated_at?: string
+          tags?: string[]
+        }
+        Relationships: []
+      }
+      note_blocks: {
+        Row: {
+          id: string
+          note_id: string
+          block_type: string
+          content: string
+          completed: boolean | null
+          position: number
+        }
+        Insert: {
+          id: string
+          note_id: string
+          block_type: string
+          content?: string
+          completed?: boolean | null
+          position?: number
+        }
+        Update: {
+          id?: string
+          note_id?: string
+          block_type?: string
+          content?: string
+          completed?: boolean | null
+          position?: number
+        }
+        Relationships: []
+      }
     }
     Views: {
-      [_ in never]: never
+      tableau_notes_analytics: {
+        Row: {
+          note_id: string | null
+          title: string | null
+          mode: string | null
+          created_at: string | null
+          updated_at: string | null
+          tag_count: number | null
+          tags: string | null
+          block_count: number | null
+          task_count: number | null
+          completed_task_count: number | null
+          formatted_word_count: number | null
+          raw_input_char_count: number | null
+          raw_input_word_count: number | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
       [_ in never]: never

@@ -1,0 +1,17 @@
+note_id,title,mode,created_at,updated_at,tag_count,tags,block_count,task_count,completed_task_count,formatted_word_count,raw_input_char_count,raw_input_word_count
+demo-001,Weekly team meeting,action,2026-10-01T09:00:00Z,2026-10-01T09:15:00Z,2,"meeting, team",7,3,2,84,465,78
+demo-002,Biology chapter 4,study,2026-10-02T11:30:00Z,2026-10-02T11:45:00Z,3,"biology, exam, cells",9,2,1,126,702,115
+demo-003,Book ideas,simple,2026-10-03T14:10:00Z,2026-10-03T14:10:00Z,1,reading,4,0,0,42,228,39
+demo-004,Website redesign,detailed,2026-10-04T08:20:00Z,2026-10-04T08:35:00Z,2,"design, project",8,3,2,103,581,96
+demo-005,Client follow-up,action,2026-10-05T16:00:00Z,2026-10-05T16:12:00Z,2,"client, work",6,4,3,71,394,66
+demo-006,Photosynthesis review,study,2026-10-06T10:15:00Z,2026-10-06T10:27:00Z,2,"biology, exam",7,1,0,94,521,86
+demo-007,Weekend plan,simple,2026-10-07T17:40:00Z,2026-10-07T17:40:00Z,1,personal,3,2,0,31,165,29
+demo-008,Research project kickoff,detailed,2026-10-08T09:05:00Z,2026-10-08T09:22:00Z,3,"research, project, team",10,4,2,142,790,131
+demo-009,Lab meeting,action,2026-10-10T13:00:00Z,2026-10-10T13:14:00Z,2,"lab, biology",8,3,3,98,548,94
+demo-010,Statistics formulas,study,2026-10-12T12:25:00Z,2026-10-12T12:40:00Z,2,"statistics, exam",9,2,1,117,649,108
+demo-011,App feature ideas,simple,2026-10-14T15:50:00Z,2026-10-14T15:50:00Z,2,"product, ideas",5,1,0,55,307,51
+demo-012,Monthly review,detailed,2026-10-16T18:10:00Z,2026-10-16T18:29:00Z,2,"personal, review",9,5,4,133,741,127
+demo-013,Presentation checklist,action,2026-10-18T10:00:00Z,2026-10-18T10:13:00Z,3,"class, presentation, project",7,5,3,88,492,82
+demo-014,Cell structure notes,study,2026-10-20T08:45:00Z,2026-10-20T09:01:00Z,2,"biology, cells",8,2,2,109,615,101
+demo-015,Trip packing list,simple,2026-10-22T19:30:00Z,2026-10-22T19:30:00Z,1,travel,4,2,1,39,218,36
+demo-016,Team retrospective,detailed,2026-10-24T16:30:00Z,2026-10-24T16:49:00Z,2,"meeting, team",10,4,3,148,823,139

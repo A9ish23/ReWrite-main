@@ -1,7 +1,8 @@
 import { useCallback, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Search, Trash2, Download, Copy, Moon, Sun, X, Plus } from 'lucide-react';
+import { Search, Trash2, Download, Copy, Moon, Sun, X, FileSpreadsheet } from 'lucide-react';
 import { useNotesStore } from '@/store/notesStore';
+import { downloadNotesAnalyticsCsv } from '@/lib/analyticsExport';
 
 export default function Sidebar() {
   const {
@@ -177,9 +178,20 @@ export default function Sidebar() {
 
           {/* Footer stats */}
           <div className="px-3 py-2.5 border-t border-border">
-            <p className="mono text-[10px] text-muted-foreground/30">
-              {notes.length} {notes.length === 1 ? 'note' : 'notes'}
-            </p>
+            <div className="flex items-center justify-between gap-2">
+              <p className="mono text-[10px] text-muted-foreground/30">
+                {notes.length} {notes.length === 1 ? 'note' : 'notes'}
+              </p>
+              <button
+                onClick={() => downloadNotesAnalyticsCsv(notes)}
+                disabled={notes.length === 0}
+                className="flex items-center gap-1.5 rounded-[3px] px-2 py-1 text-[10px] text-muted-foreground/60 hover:bg-secondary hover:text-foreground disabled:opacity-30"
+                title="Export analytics data for Excel and Tableau"
+              >
+                <FileSpreadsheet size={12} />
+                Excel export
+              </button>
+            </div>
           </div>
         </motion.aside>
       )}
